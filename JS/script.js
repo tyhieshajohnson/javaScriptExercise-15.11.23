@@ -44,6 +44,15 @@ var calButton = document.querySelector('[data-calculate1]');
 //         P.S. for the next step make use of console.log() to keep track of where data is going
 let calSpan = document.querySelector('[data-first]');  
 // 5.5. Create a normal function that allows us to multiply the 2 inputs together and writes the information to the FIRST span element.
+function multiplySpan () {
+    let inputs = document.querySelector('[data-first]');
+    let input1 = parseFloat(inputs[0].value);
+    let input2 = parseFloat(inputs[1].value);
+    let result = input1 * input2;
+}
+calButton.addEventListener('click', multiplySpan);
+console.log('multiplySpan');
+
 // 5.6. Add an event listener to the button that runs the function that tyou created
 // 5.7 Hmm......Did you forget to make your input tags return a value instead of the element? (0.0)
 //     Or did you forget we are writing to an element not an input?....which means your answer will be displayed with innerText
