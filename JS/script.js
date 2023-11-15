@@ -31,7 +31,15 @@ let inputElement = document.createElement('input');
 // 5.2. Attach the second input to a variable
 let myInput = document.getElementById('myInput');
 let mySpan = document.getElementById('mySpan');
+
 // 5.3. Attach the FIRST button to a variable(going to add an eventListener to button)
+var calButton = document.querySelector('[data-calculate1]');
+    // Add an event listener to the button
+    calButton.addEventListener('click', function() {
+        // Your logic or function to be executed when the button is clicked
+        alert('Calculated');
+    });
+
 // 5.4. Attach the FIRST span element to a variable(To display the information to)
 //         P.S. for the next step make use of console.log() to keep track of where data is going  
 // 5.5. Create a normal function that allows us to multiply the 2 inputs together and writes the information to the FIRST span element.
