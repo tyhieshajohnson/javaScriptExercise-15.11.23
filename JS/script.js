@@ -63,7 +63,6 @@ function percentageSpan () {
 }
 calButton.addEventListener('click', multiplySpan);
 
-
 // Okay, that was pretty awesome...not too bad when you have the steps?
 
 // 6. Now you will have to return the calculation of the 2 numbers from the modulus input for eg.......4....%....2....= 0
