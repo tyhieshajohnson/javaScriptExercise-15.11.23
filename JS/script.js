@@ -142,7 +142,28 @@ myCars.unshift(removedCar);
 
 //             Time to SWITCH it up a bit
 // 16. Write a simple conditional statement that will check if someone is younger than 18 or older than 18. The variable will be called age = 18 then a=17 to check
+let theirAge = 17;
+
+if (theirAge < 18) {
+    console.log("-18");
+} else if (theirAge === 18) {
+    console.log("18");
+} else {
+    console.log("+18");
+}
 // 17. Make use of a switch statement and create a possible soultion for no.16
+switch (true) {
+    case age < 18:
+        console.log("-18");
+        break;
+    case age === 18:
+        console.log("18");
+        break;
+    default:
+        console.log("+18");
+        break;
+}
+
 // 18.     USE A SWITCH statement!!!!!
 // A students Maths mark was 77%,their Physics marks was 70% and their English was 50%. You are required to calculate their average mark. 
 // Then we can check the average mark and return a messageto the console, if averageMark is :
@@ -150,6 +171,26 @@ myCars.unshift(removedCar);
 //         79%-70%(message="You average was good, it was ..."),
 //         69%-50%(message='Your average was okay, it was ..'), 
 //         49%-0% (message ='You must work harder next time')
+var mathMark = 77;
+var physicsMark = 70;
+var englishMark = 50;
+
+var averageMark = (mathMark + physicsMark + englishMark) / 3;
+switch (true) {
+    case averageMark < 70%:
+        console.log("You average was good, it was ..." + averageMark);
+        break;
+    case averageMark < 50%:
+        console.log("Your average was okay, it was .. " + averageMark);
+        break;
+    case averageMark < 80%:
+        console.log("You did well your average was ..." + averageMark);
+        break;
+    default:
+        console.log("You must work harder next time" + averageMark);
+        break;
+}
+
 // 19. USE the variable that you created in question 9 and use a while loop to print each iteration to the console and at that same instance, increase the variable used by 1
 // 20. USE while or a do while loop to print out the array of Question15(coolCars).
 // 21. Create an object called chair and give it a 
