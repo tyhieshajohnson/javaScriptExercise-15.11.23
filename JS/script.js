@@ -33,7 +33,7 @@ let myInput = document.getElementById('myInput');
 let mySpan = document.getElementById('mySpan');
 
 // 5.3. Attach the FIRST button to a variable(going to add an eventListener to button)
-var calButton = document.querySelector('[data-calculate1]');
+let calButton = document.querySelector('[data-calculate1]');
 
 // 5.4. Attach the FIRST span element to a variable(To display the information to)
 //         P.S. for the next step make use of console.log() to keep track of where data is going
@@ -66,11 +66,27 @@ calButton.addEventListener('click', multiplySpan);
 // Okay, that was pretty awesome...not too bad when you have the steps?
 
 // 6. Now you will have to return the calculation of the 2 numbers from the modulus input for eg.......4....%....2....= 0
-// 6.1 Set the first modulus input to a variable 
+// 6.1 Set the first modulus input to a variabl
+let calModulus1 = document.querySelector('[data-firstModulus]');
+
 // 6.2 Set the send modulud input to a variable
+let calModulus2 = document.querySelector('[data-secondModulus]');
+
 // 6.3 Set the SECOND span to a varable(will display answer)
+let modSpan2 = document.querySelector('[data=second]');
+
 // 6.4 Set the SECOND button to a variable(to run event listener)
+let calButton2 = document.querySelector('[data-calculate2]');
+
 // 6.5 Create a normal function to calculate the modulus of the inputs
+function percentageSpan () {
+    let inputs = document.querySelector('[data-second]');
+    let input3 = parseFloat(inputs[0].value); // || 0;
+    let input4 = parseFloat(inputs[1].value); // || 0;
+    return input3 * input4;
+}
+calButton2.addEventListener('click', percentageSpan);
+
 // 6.6 Add an event listener to the button which will run the function you created
 
 // Hmmm......That wasn't too bad....I knew you could do it! I believe in you.
