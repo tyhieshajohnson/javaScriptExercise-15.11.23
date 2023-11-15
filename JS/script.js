@@ -31,8 +31,6 @@ let inputElement = document.createElement('input');
 // 5.2. Attach the second input to a variable
 let myInput = document.getElementById('myInput');
 let mySpan = document.getElementById('mySpan');
-// Get the initial value of the span and set it as the value of the input
-myInput.value = mySpan.innerHTML;
 // 5.3. Attach the FIRST button to a variable(going to add an eventListener to button)
 // 5.4. Attach the FIRST span element to a variable(To display the information to)
 //         P.S. for the next step make use of console.log() to keep track of where data is going  
