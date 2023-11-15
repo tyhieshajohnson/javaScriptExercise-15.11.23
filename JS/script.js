@@ -34,11 +34,6 @@ let mySpan = document.getElementById('mySpan');
 
 // 5.3. Attach the FIRST button to a variable(going to add an eventListener to button)
 var calButton = document.querySelector('[data-calculate1]');
-    // Add an event listener to the button
-    calButton.addEventListener('click', function() {
-        // Your logic or function to be executed when the button is clicked
-        alert('Calculated');
-    });
 
 // 5.4. Attach the FIRST span element to a variable(To display the information to)
 //         P.S. for the next step make use of console.log() to keep track of where data is going
@@ -46,16 +41,28 @@ let calSpan = document.querySelector('[data-first]');
 // 5.5. Create a normal function that allows us to multiply the 2 inputs together and writes the information to the FIRST span element.
 function multiplySpan () {
     let inputs = document.querySelector('[data-first]');
-    let input1 = parseFloat(inputs[0].value);
-    let input2 = parseFloat(inputs[1].value);
-    let result = input1 * input2;
+    let input1 = parseFloat(inputs[0].value); // || 0;
+    let input2 = parseFloat(inputs[1].value); // || 0;
+    return input1 * input2;
 }
 calButton.addEventListener('click', multiplySpan);
-console.log('multiplySpan');
 
 // 5.6. Add an event listener to the button that runs the function that tyou created
+calButton.addEventListener('click', function() {
+    // Your logic or function to be executed when the button is clicked
+    alert('Calculated');
+});
+
 // 5.7 Hmm......Did you forget to make your input tags return a value instead of the element? (0.0)
 //     Or did you forget we are writing to an element not an input?....which means your answer will be displayed with innerText
+function percentageSpan () {
+    let inputs = document.querySelector('[data-second]');
+    let input3 = parseFloat(inputs[0].value); // || 0;
+    let input4 = parseFloat(inputs[1].value); // || 0;
+    return input3 * input4;
+}
+calButton.addEventListener('click', multiplySpan);
+
 
 // Okay, that was pretty awesome...not too bad when you have the steps?
 
