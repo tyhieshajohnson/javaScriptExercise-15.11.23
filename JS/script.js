@@ -115,17 +115,17 @@ let parentsAge = 20;
 
 
 // 10. Create an array with called coolCars and give it the following value: ['BMW','Bugati','Ferrari','McLaren', 'Mercedes']
-let myCars = ['BMW', 'Bugatti', 'Ferrari', 'McLaren', 'Mercedes'];
+let coolCars = ['BMW', 'Bugatti', 'Ferrari', 'McLaren', 'Mercedes'];
 
 //             Now to manipulate the arrays. ;)
 // 11. Write the code to change the 'McLaren' value to 'Lamborghini' in the array Hint: use indexing to access different values in arrays
-myCars[3] = 'Lamborghini';
+coolCars[3] = 'Lamborghini';
 
 // 12. Use a for loop to loop through the array, and console.log every value inside of the array.
-let myCars = ['BMW', 'Bugatti', 'Ferrari', 'McLaren', 'Mercedes'];
+let coolCars = ['BMW', 'Bugatti', 'Ferrari', 'McLaren', 'Mercedes'];
 
-for (var i = 0; i < myCars.length; i++) {
-    console.log(myCars[i]);
+for (var i = 0; i < coolCars.length; i++) {
+    console.log(coolCars[i]);
 }
 
 // 13. Reverse the array and console.log the reversed array.
@@ -171,11 +171,11 @@ switch (true) {
 //         79%-70%(message="You average was good, it was ..."),
 //         69%-50%(message='Your average was okay, it was ..'), 
 //         49%-0% (message ='You must work harder next time')
-var mathMark = 77;
-var physicsMark = 70;
-var englishMark = 50;
+let mathMark = 77;
+let physicsMark = 70;
+let englishMark = 50;
 
-var averageMark = (mathMark + physicsMark + englishMark) / 3;
+let averageMark = (mathMark + physicsMark + englishMark) / 3;
 switch (true) {
     case averageMark < 70%:
         console.log("You average was good, it was ..." + averageMark);
@@ -192,7 +192,17 @@ switch (true) {
 }
 
 // 19. USE the variable that you created in question 9 and use a while loop to print each iteration to the console and at that same instance, increase the variable used by 1
+while (parentsAge <= 25) {
+    console.log("Parent's Age: " + parentsAge);
+    parentsAge++;
+}
+
 // 20. USE while or a do while loop to print out the array of Question15(coolCars).
+while (coolCars <= 25) {
+    console.log("Parent's Age: " + parentsAge);
+    parentsAge++;
+}
+
 // 21. Create an object called chair and give it a 
 //         property of legs and a value of 4,
 //         a secondProperty of material with a value of plastic
@@ -204,8 +214,10 @@ let chair = new Object ();{
 // 22. Write the code that adds a property of 
 //         'armRestBars' with a value of 'none' 
 //         to the chair object.
-// const chair = ["4", "plastic"]
-// chair.push("armRestBars");
+const chair = ["4", "plastic"]
+chair.push("armRestBars");
+
+
 // 23.1.   What code will I write to view the value of the armRestBars.
 // 23.2    What code can I use to delete the property of legs with the value of 4.
 
