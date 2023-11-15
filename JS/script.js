@@ -27,7 +27,12 @@ pElement.innerText = 'I have discovered that I can accomplish anything I put my 
 
 // So far you have hints, however the hints have lessened.
 // 5.1. Attach the first input to a variable
+let inputElement = document.createElement('input');
 // 5.2. Attach the second input to a variable
+let myInput = document.getElementById('myInput');
+let mySpan = document.getElementById('mySpan');
+// Get the initial value of the span and set it as the value of the input
+myInput.value = mySpan.innerHTML;
 // 5.3. Attach the FIRST button to a variable(going to add an eventListener to button)
 // 5.4. Attach the FIRST span element to a variable(To display the information to)
 //         P.S. for the next step make use of console.log() to keep track of where data is going  
@@ -84,9 +89,16 @@ pElement.innerText = 'I have discovered that I can accomplish anything I put my 
 // 21. Create an object called chair and give it a 
 //         property of legs and a value of 4,
 //         a secondProperty of material with a value of plastic
+let chair = new Object ();{
+    legs = 4;
+    material = "plastic";
+}
+
 // 22. Write the code that adds a property of 
 //         'armRestBars' with a value of 'none' 
 //         to the chair object.
+// const chair = ["4", "plastic"]
+// chair.push("armRestBars");
 // 23.1.   What code will I write to view the value of the armRestBars.
 // 23.2    What code can I use to delete the property of legs with the value of 4.
 
