@@ -22,7 +22,7 @@ let h3Element = document.querySelector('h3');
 h3Element.innerText = "Things I've accomplished so far";
 
 // 4. Change the paragraph below Question3(above) to 'I have discovered that I can accomplish anything I put my mind to'Hint: Use querySelectorAll and index or use getElementByTagName and index
-const pElement = document.querySelectorAll('.p ');
+let pElement = document.querySelectorAll('p')[1];
 pElement.innerText = 'I have discovered that I can accomplish anything I put my mind to';
 
 // So far you have hints, however the hints have lessened.
