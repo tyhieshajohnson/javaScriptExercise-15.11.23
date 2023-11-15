@@ -85,32 +85,60 @@ function percentageSpan () {
     let input4 = parseFloat(inputs[1].value); // || 0;
     return input3 * input4;
 }
-calButton2.addEventListener('click', percentageSpan);
 
 // 6.6 Add an event listener to the button which will run the function you created
+
 
 // Hmmm......That wasn't too bad....I knew you could do it! I believe in you.
 // You should now have an idea of the steps neccesary to complete actions using DOM manipulation.
 
 // Okay now that you are aware of the steps needed, try no 7
 // 7.1 Change the text of 'Bubble Tea' to 'White Tea'
+let bubbleTeaElement = document.getElementById('bubbleTea');
+bubbleTeaElement.innerHTML = 'White Tea';
+
 // 7.2 Change the text of 'Green Tea' to 'Black tea'
+let greenTeaElement = document.getElementById('green tea');
+greenTeaElement.innerHTML = 'Black tea';
+
 // 7.3 Change the text of 'Iced Tea' to 'Herbal Tea'
+let teaElement = document.getElementById('[Iced Tea]');
+teaElement.innerHTML = 'Herbal Tea';
 
 // You're eating Javascript, and again....I'm proud of you!
 
 // 8. Declare a variable called lastName and add a value to it(value must be a string)
+let lastName = "Johnson";
+
 // 9. Declare a variable called parentsAge and give it a value of 20(value must be a number)
+let parentsAge = 20;
+
+
 // 10. Create an array with called coolCars and give it the following value: ['BMW','Bugati','Ferrari','McLaren', 'Mercedes']
+let myCars = ['BMW', 'Bugatti', 'Ferrari', 'McLaren', 'Mercedes'];
 
 //             Now to manipulate the arrays. ;)
 // 11. Write the code to change the 'McLaren' value to 'Lamborghini' in the array Hint: use indexing to access different values in arrays
+myCars[3] = 'Lamborghini';
+
 // 12. Use a for loop to loop through the array, and console.log every value inside of the array.
+let myCars = ['BMW', 'Bugatti', 'Ferrari', 'McLaren', 'Mercedes'];
+
+for (var i = 0; i < myCars.length; i++) {
+    console.log(myCars[i]);
+}
+
 // 13. Reverse the array and console.log the reversed array.
+let reversedCars = myCars.slice().reverse();
+console.log(reversedCars);
+
 // 14. Write the code to remove the last item in the array(coolCars not the reversed array) and store it in a variable....
 // which means your array of coolCars must look like : ['BMW','Bugati','Ferrari','Lamborghini]
+var removedCar = myCars.pop();
+
 // 15. Now write the code to use the variable you made in no.14 and add it to the FRONT of the array. Your coolCars array should now look like:
 // [ 'Mercedes', 'BMW', 'Bugati', 'Ferrari', 'Lamborghini']
+myCars.unshift(removedCar);
 
 //             Time to SWITCH it up a bit
 // 16. Write a simple conditional statement that will check if someone is younger than 18 or older than 18. The variable will be called age = 18 then a=17 to check
