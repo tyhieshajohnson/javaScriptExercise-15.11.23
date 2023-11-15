@@ -198,9 +198,10 @@ while (parentsAge <= 25) {
 }
 
 // 20. USE while or a do while loop to print out the array of Question15(coolCars).
-while (coolCars <= 25) {
-    console.log("Parent's Age: " + parentsAge);
-    parentsAge++;
+var i = 0;
+while (i < coolCars.length) {
+    console.log(coolCars[i]);
+    i++;
 }
 
 // 21. Create an object called chair and give it a 
@@ -219,7 +220,10 @@ chair.push("armRestBars");
 
 
 // 23.1.   What code will I write to view the value of the armRestBars.
+console.log(chair.armRestBars);
+
 // 23.2    What code can I use to delete the property of legs with the value of 4.
+delete chair.legs
 
 // 24. Create an factory function that can be used to return objects of electrical devices.
 //         the factory function should include the properties of 
