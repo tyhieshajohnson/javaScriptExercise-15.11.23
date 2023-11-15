@@ -41,7 +41,8 @@ var calButton = document.querySelector('[data-calculate1]');
     });
 
 // 5.4. Attach the FIRST span element to a variable(To display the information to)
-//         P.S. for the next step make use of console.log() to keep track of where data is going  
+//         P.S. for the next step make use of console.log() to keep track of where data is going
+let calSpan = document.querySelector('[data-first]');  
 // 5.5. Create a normal function that allows us to multiply the 2 inputs together and writes the information to the FIRST span element.
 // 5.6. Add an event listener to the button that runs the function that tyou created
 // 5.7 Hmm......Did you forget to make your input tags return a value instead of the element? (0.0)
